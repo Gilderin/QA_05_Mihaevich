@@ -1,4 +1,4 @@
-package qa05;
+package lessons_homework.lesson_1.task_4;
 
 public class HelloWorld {
     public static void main(String[] args) {
