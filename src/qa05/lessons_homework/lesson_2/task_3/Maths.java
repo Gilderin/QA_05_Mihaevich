@@ -8,6 +8,8 @@ public class Maths {
             arithmeticsCounter = arithmeticsCounter * 2;
             arithmeticsProgression += arithmeticsCounter;
             i = arithmeticsCounter;
+            
+            // i = i * 2 и тогда arithmeticsCounter переменная не нужна
         }
         System.out.println(arithmeticsProgression);
     }
