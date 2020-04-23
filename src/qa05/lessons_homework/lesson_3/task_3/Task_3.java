@@ -1,5 +1,7 @@
 package lessons_homework.lesson_3.task_3;
 
+// старайся выносить части кода в отдельные методы
+// не забывай форматировать код
 public class Task_3 {
     public static void main(String[] args) {
         int[] array = new int[10];
