@@ -12,13 +12,18 @@ public class Task_6 {
                 sizeOfNewArray++;
             }
         }
+        // newArray -> evenArray
         int[] newArray = new int[sizeOfNewArray];
+        //
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
                 for (int j = 0; j < newArray.length; j++) {
-                    if (newArray[j] == 0) {
+                    // вместо такой проверки, которая потенциально опасно введи курсор для второго массива, 
+                    // который будешь увеличивать если вставляешь элемент
+                    // вложенный цикл тогда скорее всего не понадобится
+                    if (newArray[j] == 0) { 
                         newArray[j] = array[i];
-                        break;
+                        break; // 
                     }
                 }
             }
