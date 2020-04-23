@@ -20,6 +20,8 @@ public class Task_7 {
         System.out.println("Descending sort: "+Arrays.toString(arrayDescending));
     }
 
+    // не стоит передавать два массива для сортировки. просто дважды вызови метод, возможно понадобится аргумент
+    // который бы указывал ascending / descending
     public static void sort(int[] arrayA, int[] arrayD) {
         boolean needSort = true;
         while (needSort) {
@@ -37,6 +39,7 @@ public class Task_7 {
         }
     }
 
+    // sort -> swap
     public static void sort(int[] array, int left, int right) {
         int tmpAscending = array[left];
         array[left] = array[right];
