@@ -2,6 +2,8 @@ package lessons_homework.lesson_3.task_1;
 
 import java.util.Scanner;
 
+//по коду все хорошо, попробуй выносить в отдельные методы логические блоки кода,
+// например, заполнение массива или еще что-нибудь. 
 public class Task_1 {
     public static void main(String[] args) {
         int[] array = new int[3];
