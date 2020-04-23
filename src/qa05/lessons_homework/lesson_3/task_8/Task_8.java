@@ -3,6 +3,8 @@ package lessons_homework.lesson_3.task_8;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// выглядит довольно сложно, но работает, подумай как можно упростить
+// повыноси части кода в отдельные методы
 public class Task_8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -11,6 +13,8 @@ public class Task_8 {
         while (wrongSize) {
             System.out.println("Please input size of butterfly(3-18):");
             sizeButterfly = scanner.nextInt();
+            
+           // 3, 18 - в переменные
             if (sizeButterfly < 3 | sizeButterfly > 18) {
                 System.out.println("wrong size");
             } else {
