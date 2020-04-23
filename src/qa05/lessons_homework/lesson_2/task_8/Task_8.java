@@ -11,6 +11,7 @@ public class Task_8 {
             } else {
                 sumOddNumbers += i;
             }
+            // общую сумму лучше посчитать 1 раз вне цикла сложив чет и нечет
             sumNumbers += i;
         }
         System.out.println("Sum of even numbers = " + sumEvenNumbers);

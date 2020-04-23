@@ -8,6 +8,8 @@ public class Task_6 {
                 System.out.println("Even number: " + numbers);
             }
             numbers++;
+            //  технически верно, но можно просто сделать numbers+2, перед этим проверив что число четное
+            // так будет гораздо меньше итераций
         } while (numbers <= 100);
     }
 }
