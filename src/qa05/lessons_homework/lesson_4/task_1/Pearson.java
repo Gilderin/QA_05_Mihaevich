@@ -2,9 +2,12 @@ package lessons_homework.lesson_4.task_1;
 
 import java.util.Objects;
 
+// Pearson -> Person
 public class Pearson {
     private String name;
     private Integer age;
+    // я вроде вам еще не показывал константы, но правильно будет использовать final + caps lock
+    //private static final String STATIC_BLOCK_MESSAGE = "Hello from static";
     private static String text = "Hello from static";
 
     public Pearson(String name, Integer age) {
@@ -12,6 +15,7 @@ public class Pearson {
         this.age = age;
     }
 
+    // констурктор без аргументов должен идти первым
     public Pearson() {
         this("Andrey", 24);
     }
@@ -38,8 +42,8 @@ public class Pearson {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) return true; // не забывай использовать {} после if
+        if (o == null || getClass() != o.getClass()) return false; // не забывай использовать {} после if
         Pearson pearson = (Pearson) o;
         return Objects.equals(name, pearson.name) &&
                 Objects.equals(age, pearson.age);
