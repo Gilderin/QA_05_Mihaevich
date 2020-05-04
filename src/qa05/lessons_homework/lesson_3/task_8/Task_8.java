@@ -15,7 +15,7 @@ public class Task_8 {
             sizeButterfly = scanner.nextInt();
             
            // 3, 18 - в переменные
-            if (sizeButterfly < 3 | sizeButterfly > 18) {
+            if (sizeButterfly < 3 | sizeButterfly > 20) {
                 System.out.println("wrong size");
             } else {
                 wrongSize = false;
