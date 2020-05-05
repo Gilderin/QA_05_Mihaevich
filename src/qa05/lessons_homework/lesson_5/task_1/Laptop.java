@@ -28,5 +28,5 @@ public class Laptop implements Computer {
         System.out.println("Laptop reboots");
     }
 
-
+// пустая строка не нужна
 }
