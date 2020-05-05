@@ -6,6 +6,7 @@ public class TownHouse implements ParametersOfHouses {
     private Boolean isOn;
 
     public TownHouse() {
+        // this(5,15, true)
         this.countFloors = 5;
         this.countPeople = 15;
         this.isOn = true;
