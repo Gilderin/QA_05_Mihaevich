@@ -6,6 +6,7 @@ public class VacationHome implements ParametersOfHouses {
     private Boolean isOn;
 
     public VacationHome() {
+        // this(1,2,false);
         this.countFloors = 1;
         this.countPeople = 2;
         this.isOn = false;
