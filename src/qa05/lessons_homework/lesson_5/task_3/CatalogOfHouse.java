@@ -3,6 +3,8 @@ package lessons_homework.lesson_5.task_3;
 import java.util.Arrays;
 
 public class CatalogOfHouse {
+    // private ParametersOfHouses[];
+    // constructor
     public static void main(String[] args) {
         ParametersOfHouses[] catalog = {
                 new TownHouse(),
