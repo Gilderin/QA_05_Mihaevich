@@ -1,10 +1,11 @@
 package lessons_homework.lesson_6.task_2;
 
+// форматируй код
 public class Engine {
     private boolean isOn;
 
     public Engine() {
-        this.isOn=false;
+        this.isOn=false; // поле типа boolean (примитив) по умолчанию будет false, твоя строка лишняя
     }
 
     public boolean turnOnEngine() {
