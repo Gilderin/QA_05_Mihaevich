@@ -10,13 +10,13 @@ public class Transmission {
     }
 
     public void transmissionUp(){
-        if(transmission<7) {
+        if(transmission<7) { // 7 в константу
             transmission++;
         }
     }
 
     public void transmissionDown(){
-        if(transmission>0) {
+        if(transmission>0) { // 0 в константу
             transmission--;
         }
     }
