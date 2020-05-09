@@ -1,11 +1,12 @@
 package lessons_homework.lesson_6.task_2;
 
+// форматируй код
 public class Transmission {
 
     private int transmission;
 
     public Transmission(){
-        this.transmission=0;
+        this.transmission=0; // поле типа int (примитив) по умолчанию будет 0, твоя строка лишняя
     }
 
     public void transmissionUp(){
