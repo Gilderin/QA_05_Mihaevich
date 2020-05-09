@@ -7,7 +7,7 @@ public class Car {
     public Car(Engine engine, Transmission transmission) {
         this.engine = engine;
         this.transmission = transmission;
-
+// пустая строк не нужна
     }
 
     public void onEngine() {
@@ -40,7 +40,7 @@ public class Car {
 
     public void move() {
         if (engine.isOn() && transmission.getTransmission() > 0) {
-            System.out.println("Speed=" + transmission.getTransmission() * 20 + "");
+            System.out.println("Speed=" + transmission.getTransmission() * 20 + ""); // 20 + "" зачем + ""?
         } else {
             System.out.println("Car is not move");
         }
@@ -52,7 +52,7 @@ public class Car {
 
     public void speed() {
         if (engine.isOn()) {
-            System.out.println("Speed=" + transmission.getTransmission() * 20 + "");
+            System.out.println("Speed=" + transmission.getTransmission() * 20 + ""); // 20 + "" зачем + ""?
         } else {
             System.out.println("Engine is not ON");
         }
