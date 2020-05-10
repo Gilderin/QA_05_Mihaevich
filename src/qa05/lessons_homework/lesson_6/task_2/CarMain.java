@@ -10,10 +10,9 @@ public class CarMain {
         car.onEngine();
         car.move();
         car.shifUp(); // а что если написать метод в этом классе, который бы принимал car и вызывал повысить передачу в цикле нужное кол-во раз
-        car.shifUp();
+        car.shifUpRepeatedly(5);
         car.move();
-        car.shifUp();
-        car.shifUp();
+        car.shiftDownRepeatedly(5);
         car.shifUp();
         car.shiftDown();
         car.speed();

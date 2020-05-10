@@ -1,0 +1,9 @@
+package lessons_homework.lesson_7.task_3;
+
+public class Task_3 {
+    public static void main(String[] args) {
+        String color = "Green. red. blue. yellow";
+        color = color.replace(".", ",");
+        System.out.println(color);
+    }
+}

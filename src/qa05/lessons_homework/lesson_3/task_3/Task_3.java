@@ -9,12 +9,12 @@ public class Task_3 {
             array[i] = (int) (Math.random() * 100);
             System.out.println("Elenemt " + i + " of array = " + array[i]);
         }
-        for (int i = 0; i <array.length ; i++) {
-            if(array[i]%2!=0){
-                array[i]=0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                array[i] = 0;
             }
         }
-        for (int i = 0; i <array.length ; i++) {
+        for (int i = 0; i < array.length; i++) {
             System.out.println("Elenemt " + i + " of  new array = " + array[i]);
         }
     }

@@ -4,19 +4,19 @@ package lessons_homework.lesson_6.task_2;
 public class Transmission {
 
     private int transmission;
+    private int maxShift = 7;
 
-    public Transmission(){
-        this.transmission=0; // поле типа int (примитив) по умолчанию будет 0, твоя строка лишняя
+    public Transmission() {
     }
 
-    public void transmissionUp(){
-        if(transmission<7) { // 7 в константу
+    public void transmissionUp() {
+        if (transmission < maxShift) {
             transmission++;
         }
     }
 
-    public void transmissionDown(){
-        if(transmission>0) { // 0 в константу
+    public void transmissionDown() {
+        if (transmission > maxShift) {
             transmission--;
         }
     }

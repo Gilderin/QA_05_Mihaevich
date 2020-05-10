@@ -5,13 +5,12 @@ public class Engine {
     private boolean isOn;
 
     public Engine() {
-        this.isOn=false; // поле типа boolean (примитив) по умолчанию будет false, твоя строка лишняя
     }
 
     public boolean turnOnEngine() {
         if (isOn) {
             return isOn;
-        }else{
+        } else {
             isOn = true;
             return isOn;
         }
@@ -21,7 +20,7 @@ public class Engine {
         if (isOn) {
             isOn = false;
             return isOn;
-        }else{
+        } else {
             return isOn;
         }
     }
