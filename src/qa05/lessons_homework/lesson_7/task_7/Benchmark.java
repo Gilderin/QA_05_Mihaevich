@@ -26,6 +26,10 @@ public class Benchmark {
         return finish - start;
     }
 
+    /* StringBuffer/StringBuilder являются наследниками класса AbstractStringBuilder,
+    у которого есть метод append(), a, значит, мы можем заменить методы тестирования билдера и буфера на один, поменяв
+    аргумент StringBuffer на AbstractStringBuilder
+    */
     public static long stringBufferTest(int iterations, StringBuffer input, String letter) {
         long start = System.currentTimeMillis();
         for (int i = 0; i < iterations; i++) {
