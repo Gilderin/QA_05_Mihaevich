@@ -29,10 +29,10 @@ public class Task_8 {
         System.out.println("Входной массив данных о маторах: " + Arrays.toString(array));
         for (int i = 0; i < array.length; i++) {
             if (array[i] == "1.4") {
-                array[i].replace("1.4","2.0T");
+                array[i] = "2.0T";
             }
             if (array[i] == "1.8") {
-                array[i].replace("1.8","1.8T");
+                array[i] = "1.8T";
             }
         }
         System.out.println("Исправленный массив данных о маторах: " + Arrays.toString(array));
