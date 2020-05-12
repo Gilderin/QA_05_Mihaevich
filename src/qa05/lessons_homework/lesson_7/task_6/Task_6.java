@@ -5,8 +5,10 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+// форматируй код
 public class Task_6 {
     public static void main(String[] args) {
+        // было бы здорово создание массива вынести в отдельный метод
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите размер массива: ");
         int size = scan.nextInt();
@@ -22,6 +24,7 @@ public class Task_6 {
                 sizeNewarray++;
             }
         }
+        // думаю тоже в отдельный метод стоит вынести
         String[] newArray = new String[sizeNewarray];
         for (int i = 0; i < array.length; i++) {
             if (checkWithRegExp(array[i])) {
