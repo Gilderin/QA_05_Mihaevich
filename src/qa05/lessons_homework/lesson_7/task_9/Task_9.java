@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task_9 {
     public static void main(String[] args) {
+        // создание массива в отдельный метод
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите размер массива: ");
         int size = scan.nextInt();
@@ -12,8 +13,9 @@ public class Task_9 {
             System.out.println("Введите " + (i + 1) + " элемент массива:");
             array[i] = scan.next();
         }
-        int minSizeToPtrint = 5;
+        int minSizeToPtrint = 5; 
         int countPrintElements = 0;
+        // эту логику тоже в отдельный метод
         for (int i = 0; i < array.length; i++) {
             if (array[i].length() > minSizeToPtrint) {
                 if (countPrintElements == 0) {
@@ -24,7 +26,7 @@ public class Task_9 {
             }
         }
         if (countPrintElements == 0) {
-            System.out.println("В массиве не содержалость строк с удовлетворяющими параметрами");
+            System.out.println("В массиве не содержалость строк с удовлетворяющими параметрами"); // есть опечатка
         }
     }
 }
