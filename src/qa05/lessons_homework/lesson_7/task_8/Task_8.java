@@ -3,6 +3,7 @@ package lessons_homework.lesson_7.task_8;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// Стоит сделать хранилище, в нем массив Car и у Car сделать поле с двигателем
 public class Task_8 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
