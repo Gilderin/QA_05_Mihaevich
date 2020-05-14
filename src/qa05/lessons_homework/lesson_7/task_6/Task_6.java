@@ -20,7 +20,7 @@ public class Task_6 {
         int j = 0;
         int sizeNewarray = 0;
         for (int i = 0; i < array.length; i++) {
-            if (checkWithRegExp(array[i])){
+            if (checkWithRegExp(array[i])) {
                 sizeNewarray++;
             }
         }
@@ -35,8 +35,8 @@ public class Task_6 {
         System.out.println(Arrays.toString(newArray));
     }
 
-    public static boolean checkWithRegExp(String arrayElement){
-        Pattern p = Pattern.compile("^[w].*",Pattern.CASE_INSENSITIVE);
+    public static boolean checkWithRegExp(String arrayElement) {
+        Pattern p = Pattern.compile("^[w].*", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(arrayElement);
         return m.matches();
     }
