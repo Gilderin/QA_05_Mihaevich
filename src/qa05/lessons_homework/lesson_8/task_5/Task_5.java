@@ -17,7 +17,7 @@ public class Task_5 {
         System.out.println("Test time remove Linked List element: " + testLinkedTime);
     }
 
-    public static Long testListRemoveElements(Integer countElements, List list) {
+    public static Long testListRemoveElements(Integer countElements, List<Integer> list) {
         long start = System.currentTimeMillis();
         for (int i = 0; i < countElements; i++) {
             int removeIndex = list.size() / 2;

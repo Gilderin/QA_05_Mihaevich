@@ -1,13 +1,12 @@
 package lessons_homework.lesson_8.task_10;
 
+import java.math.BigDecimal;
+
 public class Fruits {
     private String name;
-    private Double weight;
+    private BigDecimal weight;
 
-    public Fruits() {
-        this("Banan",1.0);
-    }
-    public Fruits(String name, Double weight) {
+    public Fruits(String name, BigDecimal weight) {
         this.name = name;
         this.weight = weight;
     }
@@ -20,11 +19,11 @@ public class Fruits {
         this.name = name;
     }
 
-    public Double getWeight() {
+    public BigDecimal getWeight() {
         return weight;
     }
 
-    public void setWeight(Double weight) {
+    public void setWeight(BigDecimal weight) {
         this.weight = weight;
     }
 
