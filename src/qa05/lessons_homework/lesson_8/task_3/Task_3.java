@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// +
 public class Task_3 {
     public static void main(String[] args) {
         List<String> collectionOne=new ArrayList<>();
@@ -13,8 +14,11 @@ public class Task_3 {
         collectionOne.add("clicks");
         collectionOne.add("One");
         collectionOne.add("Bla Bla Bla");
+        
         System.out.println(collectionOne);
+        
         collectionOne.removeAll(collectionTwo);
+        
         System.out.println(collectionOne);
     }
 }
