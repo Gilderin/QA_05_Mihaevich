@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Shop {
     private String name;
-    private Integer ID;
+    private Integer ID; / ID -> id
 
     public Shop() {
         this("100 melochey",1);
@@ -34,7 +34,7 @@ public class Shop {
     @Override
     public int hashCode() {
         return Objects.hash(name, ID);
-    }
+    } /абзац
     @Override
     public String toString() {
         return "Shop{" +
