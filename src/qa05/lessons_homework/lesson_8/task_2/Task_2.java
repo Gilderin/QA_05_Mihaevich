@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 
+/ форматируй код
 public class Task_2 {
     public static void main(String[] args) {
         ArrayList<Integer> elements=new ArrayList<>();
