@@ -35,6 +35,7 @@ public class Task_10 {
         for (int i = 0; i < warehouse.size(); i++) {
             Fruits fruit = warehouse.get(i);
             BigDecimal weight = accountingJournal.get(fruit.getName());
+            / этот иф в отдельный метод
             if (weight == null) {
                 accountingJournal.put(fruit.getName(), fruit.getWeight());
             } else {
