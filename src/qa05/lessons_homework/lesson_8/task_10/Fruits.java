@@ -2,6 +2,7 @@ package lessons_homework.lesson_8.task_10;
 
 import java.math.BigDecimal;
 
+// привыкай сразу переопределять equals+hashcode
 public class Fruits {
     private String name;
     private BigDecimal weight;
