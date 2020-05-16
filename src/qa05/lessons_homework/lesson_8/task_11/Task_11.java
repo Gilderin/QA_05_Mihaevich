@@ -5,8 +5,10 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/ форматируй код
 public class Task_11 {
     public static void main(String[] args) {
+        // Set<String> words=new TreeSet();
         TreeSet<String> words=new TreeSet();
         words.add("Holl");
         words.add("Words");
@@ -16,10 +18,12 @@ public class Task_11 {
         words.add("Holl");
         words.add("Holl");
         System.out.println(words);
+        / здесь итератор не нужен, обычный цикл по коллекции
         Iterator<String> iterator= words.iterator();
         while(iterator.hasNext()) {
             String word = iterator.next();
             if(checkWithRegExp(word)) {
+                / в задаче сказано "выбрать все" - это значит нужно из одного списка выбрать все нужные, а печатать их или нет это уже на усмотрение твое
                 System.out.println(word);
             }
         }
