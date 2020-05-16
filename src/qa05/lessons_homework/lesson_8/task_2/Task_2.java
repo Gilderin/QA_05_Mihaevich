@@ -11,6 +11,8 @@ public class Task_2 {
             elements.add(0,i);
         }
         System.out.println(elements);
+        
+        / в отдельный метод
         Iterator<Integer> iterator=elements.iterator();
         while(iterator.hasNext()){
             Integer next = iterator.next();
