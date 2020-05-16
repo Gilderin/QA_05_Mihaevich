@@ -3,6 +3,7 @@ package lessons_homework.lesson_8.task_8;
 import java.util.HashSet;
 import java.util.Set;
 
+/ форматируй код
 public class Task_8 {
     public static void main(String[] args) {
         Shop sexShop=new Shop("AlexBachurinShop",1);
