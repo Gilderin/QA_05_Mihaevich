@@ -4,15 +4,15 @@ import java.util.Objects;
 
 public class Shop {
     private String name;
-    private Integer ID; / ID -> id
+    private Integer id;
 
     public Shop() {
-        this("100 melochey",1);
+        this("100 melochey", 1);
     }
 
-    public Shop(String name, Integer ID) {
+    public Shop(String name, Integer id) {
         this.name = name;
-        this.ID = ID;
+        this.id = id;
     }
 
     public String getName() {
@@ -23,23 +23,24 @@ public class Shop {
         this.name = name;
     }
 
-    public Integer getID() {
-        return ID;
+    public Integer getId() {
+        return id;
     }
 
-    public void setID(Integer ID) {
-        this.ID = ID;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, ID);
-    } /абзац
+        return Objects.hash(name, id);
+    }
+
     @Override
     public String toString() {
         return "Shop{" +
                 "name=" + name +
-                ", id=" + ID +
+                ", id=" + id +
                 '}';
     }
 }

@@ -9,29 +9,34 @@ public class Task_6 {
     public static void main(String[] args) {
         List<Integer> arrayList = new ArrayList<>();
         List<Integer> linkedList = new LinkedList<>();
-        int countElements = 100_000;
-        / заполнение в отдельный метод
-        for (int i = 0; i < countElements; i++) {
-            arrayList.add(i);
-            linkedList.add(i);
-        }
+        int count = 100_000;
+        arrayList = addElements(count, arrayList);
+        linkedList = addElements(count, linkedList);
         long testArrayTime = testListRemoveElements(arrayList);
         long testLinkedTime = testListRemoveElements(linkedList);
-       
         System.out.println("Test time remove Array List element: " + testArrayTime);
         System.out.println("Test time remove Linked List element: " + testLinkedTime);
 
     }
 
-    public static Long testListRemoveElements(List list) {
-        long start = System.currentTimeMillis();
-        / здесь лучше будет обойтись без итератора и удалять по индексу и в отдельном методе
-        Iterator<Integer> iterator = list.iterator();
-        while (iterator.hasNext()) {
-            Integer next = iterator.next();
-            iterator.remove();
+    public static List<Integer> addElements(int count, List<Integer> list) {
+        for (int i = 0; i < count; i++) {
+            list.add(i);
         }
+        return list;
+    }
+
+    public static Long testListRemoveElements(List<Integer> list) {
+        long start = System.currentTimeMillis();
+        remove(list);
         long finish = System.currentTimeMillis();
         return finish - start;
+    }
+
+    public static void remove(List<Integer> list) {
+        int size = list.size();
+        for (int i = 0; i < size; i++) {
+            list.remove(0);
+        }
     }
 }

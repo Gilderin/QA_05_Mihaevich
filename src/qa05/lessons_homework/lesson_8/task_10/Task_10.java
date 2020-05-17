@@ -35,14 +35,18 @@ public class Task_10 {
         for (int i = 0; i < warehouse.size(); i++) {
             Fruits fruit = warehouse.get(i);
             BigDecimal weight = accountingJournal.get(fruit.getName());
-            / этот иф в отдельный метод
-            if (weight == null) {
-                accountingJournal.put(fruit.getName(), fruit.getWeight());
-            } else {
-                accountingJournal.put(
-                        fruit.getName(), weight.add(fruit.getWeight())
-                );
-            }
+            accountingJournal = countWeight(accountingJournal, weight, fruit);
+        }
+        return accountingJournal;
+    }
+
+    public static Map<String, BigDecimal> countWeight(Map<String, BigDecimal> accountingJournal, BigDecimal weight, Fruits fruit) {
+        if (weight == null) {
+            accountingJournal.put(fruit.getName(), fruit.getWeight());
+        } else {
+            accountingJournal.put(
+                    fruit.getName(), weight.add(fruit.getWeight())
+            );
         }
         return accountingJournal;
     }
